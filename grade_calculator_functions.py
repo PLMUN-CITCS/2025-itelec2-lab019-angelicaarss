@@ -14,7 +14,8 @@ def get_student_score():
         except ValueError:
             print("Invalid input. Please enter a numerical score.")
 
-def calculate_grade(score):
+
+def calculate_grade(score): # Added a blank line here
     """
     Calculates the letter grade based on the given score.
 
@@ -35,13 +36,15 @@ def calculate_grade(score):
     else:
         return "F"
 
-def main():
+
+def main(): #Added a blank line here
     """
     Main program flow: gets score, calculates grade, and displays the result.
     """
     score = get_student_score()
     grade = calculate_grade(score)
     print(f"Your Grade is: {grade}")
+
 
 if __name__ == "__main__":
     main()
