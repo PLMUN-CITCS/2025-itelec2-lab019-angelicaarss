@@ -1,23 +1,22 @@
-def get_student_score():
-    score = float(input("Enter your score: "))
-    return score
+# This program calculates a letter grade from a score.
 
-def calculate_grade(score):
-    if score >= 90:
-        return 'A'
-    elif score >= 80:
-        return 'B'
-    elif score >= 70:
-        return 'C'
-    elif score >= 60:
-        return 'D'
-    else:
-        return 'F'
+# First, we need to ask the user for their score.
+score = input("Enter your score: ")
 
-def main():
-    score = get_student_score()
-    grade = calculate_grade(score)
-    print(f"Your Grade is: {grade}")
+# We need to change the score from text to a number.
+score = int(score)  # Converts the input to an integer (whole number)
 
-if __name__ == "__main__":
-    main()
+# Now, we check the score and decide the grade.
+if score >= 90:
+    grade = "A"
+elif score >= 80:
+    grade = "B"
+elif score >= 70:
+    grade = "C"
+elif score >= 60:
+    grade = "D"
+else:
+    grade = "F"
+
+# Finally, we tell the user their grade.
+print("Your Grade is:", grade)
